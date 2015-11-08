@@ -3,6 +3,8 @@
 def display_board
 	spaces = "   |   |   "
 	line = "-----------"
-	2.times { puts spaces; puts line }
-	puts spaces
+	puts [spaces*3].join("\n" + line)
+	# 2.times { puts spaces; puts line }
+	# puts spaces
 end
+display_board
