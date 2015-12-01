@@ -1,0 +1,70 @@
+
+/lib/display_board.rb
+  defines a method display_board (FAILED - 1)
+  #display_board method
+    represents a cell as a string with 3 spaces (FAILED - 2)
+    separates cells with a | character (FAILED - 3)
+    prints an 3 cell row (FAILED - 4)
+    separates rows with a line of 11 - (FAILED - 5)
+    prints a 3x3 tic tac toe board (FAILED - 6)
+
+Failures:
+
+  1) /lib/display_board.rb defines a method display_board
+     Failure/Error: expect(defined?(display_board)).to be_truthy
+       expected: truthy value
+            got: nil
+     # ./spec/display_board_spec.rb:5:in `block (2 levels) in <top (required)>'
+
+  2) /lib/display_board.rb #display_board method represents a cell as a string with 3 spaces
+     Failure/Error: output = capture_puts{ display_board }
+     NameError:
+       undefined local variable or method `display_board' for #<RSpec::ExampleGroups::LibDisplayBoardRb::DisplayBoardMethod:0x00000001f6f120>
+     # ./spec/display_board_spec.rb:10:in `block (4 levels) in <top (required)>'
+     # ./spec/spec_helper.rb:5:in `capture_puts'
+     # ./spec/display_board_spec.rb:10:in `block (3 levels) in <top (required)>'
+
+  3) /lib/display_board.rb #display_board method separates cells with a | character
+     Failure/Error: output = capture_puts{ display_board }
+     NameError:
+       undefined local variable or method `display_board' for #<RSpec::ExampleGroups::LibDisplayBoardRb::DisplayBoardMethod:0x00000001f6ddc0>
+     # ./spec/display_board_spec.rb:16:in `block (4 levels) in <top (required)>'
+     # ./spec/spec_helper.rb:5:in `capture_puts'
+     # ./spec/display_board_spec.rb:16:in `block (3 levels) in <top (required)>'
+
+  4) /lib/display_board.rb #display_board method prints an 3 cell row
+     Failure/Error: output = capture_puts{ display_board }
+     NameError:
+       undefined local variable or method `display_board' for #<RSpec::ExampleGroups::LibDisplayBoardRb::DisplayBoardMethod:0x00000001f6ca60>
+     # ./spec/display_board_spec.rb:22:in `block (4 levels) in <top (required)>'
+     # ./spec/spec_helper.rb:5:in `capture_puts'
+     # ./spec/display_board_spec.rb:22:in `block (3 levels) in <top (required)>'
+
+  5) /lib/display_board.rb #display_board method separates rows with a line of 11 -
+     Failure/Error: output = capture_puts{ display_board }
+     NameError:
+       undefined local variable or method `display_board' for #<RSpec::ExampleGroups::LibDisplayBoardRb::DisplayBoardMethod:0x00000001f776b8>
+     # ./spec/display_board_spec.rb:28:in `block (4 levels) in <top (required)>'
+     # ./spec/spec_helper.rb:5:in `capture_puts'
+     # ./spec/display_board_spec.rb:28:in `block (3 levels) in <top (required)>'
+
+  6) /lib/display_board.rb #display_board method prints a 3x3 tic tac toe board
+     Failure/Error: output = capture_puts{ display_board }
+     NameError:
+       undefined local variable or method `display_board' for #<RSpec::ExampleGroups::LibDisplayBoardRb::DisplayBoardMethod:0x00000001f76358>
+     # ./spec/display_board_spec.rb:34:in `block (4 levels) in <top (required)>'
+     # ./spec/spec_helper.rb:5:in `capture_puts'
+     # ./spec/display_board_spec.rb:34:in `block (3 levels) in <top (required)>'
+
+Finished in 0.01439 seconds (files took 0.10168 seconds to load)
+6 examples, 6 failures
+
+Failed examples:
+
+rspec ./spec/display_board_spec.rb:4 # /lib/display_board.rb defines a method display_board
+rspec ./spec/display_board_spec.rb:9 # /lib/display_board.rb #display_board method represents a cell as a string with 3 spaces
+rspec ./spec/display_board_spec.rb:15 # /lib/display_board.rb #display_board method separates cells with a | character
+rspec ./spec/display_board_spec.rb:21 # /lib/display_board.rb #display_board method prints an 3 cell row
+rspec ./spec/display_board_spec.rb:27 # /lib/display_board.rb #display_board method separates rows with a line of 11 -
+rspec ./spec/display_board_spec.rb:33 # /lib/display_board.rb #display_board method prints a 3x3 tic tac toe board
+
