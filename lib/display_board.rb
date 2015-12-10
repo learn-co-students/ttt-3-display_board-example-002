@@ -13,10 +13,10 @@ def display_board(board=[" ", " ", " ", " ", " ", " ", " ", " ", " "])
     puts row
     cell_index = cell_index + 3
 
-    # Prints the line if the cell_index is not equal to 6.
-    # If cell_index equals 6, all the cells are displayed and there is no need for another line to be printed.
+    # Prints the line if the cell_index is not equal to 9.
+    # If cell_index equals 9, all the cells are displayed and there is no need for another line to be printed.
     # At this point the loop breaks and does not print the line
-    if cell_index == 6
+    if cell_index == 9
       break
     end
     puts line
