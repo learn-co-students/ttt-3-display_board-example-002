@@ -2,11 +2,11 @@
 def print_row
   cell = "   "
   2.times { print cell + "|" }
-  print cell
+  puts cell
 end
 
 def display_board
-  sep = "\n-----------\n"
+  sep = "-----------\n"
   print_row
   print sep
   print_row
