@@ -33,11 +33,8 @@ describe '/lib/display_board.rb' do
     it 'prints a 3x3 tic tac toe board' do
       output = capture_puts{ display_board }
 
-      expect(output).to include("   |   |   ")
-      expect(output).to include("-----------")
-      expect(output).to include("   |   |   ")
-      expect(output).to include("-----------")
-      expect(output).to include("   |   |   ")
+      expect(output).to include("   |   |   \n-----------\n   |   |   \n-----------\n   |   |   ")
+
     end
   end
 end
